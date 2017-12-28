@@ -4,7 +4,7 @@ require 'nokogiri'
 require "rexml/document"
 require 'erb'
 
-# can't download directly, have to open https://vuejs.org/v2/api/,
+# can't download directly, have to open https://cn.vuejs.org/v2/api/,
 # and copy <ul class="menu-root"> to downloaded-menu.html
 doc = Nokogiri::HTML open(__dir__ + '/downloaded-menu.html')
 root = doc.at_css('.menu-root')
@@ -31,11 +31,11 @@ doc = Nokogiri::HTML html
 doc.at_css('.menu-root > li:nth-child(13)').add_next_sibling("
 <li class='directives hooks'><a>Directives <small>Hooks</small></a>
   <ul>
-    <li><a href='https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>bind</a></li>
-    <li><a href='https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>inserted</a></li>
-    <li><a href='https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>update</a></li>
-    <li><a href='https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>componentUpdated</a></li>
-    <li><a href='https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>unbind</a></li>
+    <li><a href='https://cn.vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>bind</a></li>
+    <li><a href='https://cn.vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>inserted</a></li>
+    <li><a href='https://cn.vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>update</a></li>
+    <li><a href='https://cn.vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>componentUpdated</a></li>
+    <li><a href='https://cn.vuejs.org/v2/guide/custom-directive.html#Hook-Functions'>unbind</a></li>
   </ul>
 </li>
 ")
